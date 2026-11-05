@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#FAF7F5">
+  <meta name="description" content="366 Days With God – One Year. 366 Days. A Journey of Faith, Hope, Prayer and Love. A personal faith-based devotional gift.">
+  
+  <title>366 DAYS WITH GOD ❤️ | Daily Bible Devotional</title>
+  
+  <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="manifest" href="./manifest.json">
+
+  <!-- Elegant Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/themes.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body class="font-md">
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-wrapper" onclick="App.navigateTo('dashboard')">
+        <div class="brand-icon">✝</div>
+        <div class="brand-title">
+          <span>366 DAYS WITH GOD</span>
+          <span class="brand-heart">❤️</span>
+        </div>
+      </div>
+
+      <!-- Desktop Nav Pills -->
+      <nav class="nav-pills" aria-label="Main Navigation">
+        <button class="nav-link" data-nav="dashboard" onclick="App.navigateTo('dashboard')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span>Dashboard</span>
+        </button>
+        <button class="nav-link" data-nav="daily-reading" onclick="App.navigateTo('daily-reading')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          <span>Daily Reading</span>
+        </button>
+        <button class="nav-link" data-nav="calendar" onclick="App.navigateTo('calendar')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <span>Calendar</span>
+        </button>
+        <button class="nav-link" data-nav="favourites" onclick="App.navigateTo('favourites')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <span>Favourites</span>
+        </button>
+        <button class="nav-link" data-nav="prayer-journal" onclick="App.navigateTo('prayer-journal')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span>Prayers</span>
+        </button>
+        <button class="nav-link" data-nav="personal-journal" onclick="App.navigateTo('personal-journal')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+          <span>Journal</span>
+        </button>
+        <button class="nav-link" data-nav="dedication" onclick="App.navigateTo('dedication')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span>Dedication</span>
+        </button>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="header-actions">
+        <button class="icon-btn" onclick="App.navigateTo('search')" title="Search Devotionals">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="icon-btn" onclick="App.openRandomVerseModal()" title="Random Bible Verse">
+          <span style="font-size: 1.1rem;">🎲</span>
+        </button>
+        <button class="icon-btn" onclick="App.openPdfModal()" title="Download Printable PDF">
+          <span style="font-size: 1.1rem;">📖</span>
+        </button>
+        <button class="icon-btn" onclick="Validator.openReportModal()" title="Certified Validation Report">
+          <span style="font-size: 1.1rem;">🛡️</span>
+        </button>
+        <button class="icon-btn" onclick="App.navigateTo('settings')" title="Customization & Settings">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main View Container -->
+  <main class="main-content" id="app-main-container">
+
+    <!-- 1. Welcome View -->
+    <section id="welcome-view" class="view-section">
+      <div class="welcome-hero">
+        <div class="floral-badge">🕊️ A Personal Faith-Based Gift 🕊️</div>
+        <h1 class="welcome-title">366 DAYS WITH GOD</h1>
+        <p class="welcome-subtitle">
+          "A little reminder every day that His love, grace and guidance are always with you."
+        </p>
+        <p class="welcome-description">
+          One Year. 366 Days. A Journey of Faith, Hope, Prayer and Love. Every day contains a unique King James Version Bible verse, explanation, devotional message, sincere prayer, reflection question, and faith practice.
+        </p>
+        <div class="welcome-actions">
+          <button class="btn-primary" onclick="App.startJourney()">
+            ✨ Start Your Journey
+          </button>
+          <button class="btn-gold" onclick="App.navigateToDaily(window.appState.lastReadDay || 1)">
+            📖 Open Today's Reading
+          </button>
+          <button class="btn-secondary" onclick="App.navigateTo('dedication')">
+            💌 Read the Dedication
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Dedication View -->
+    <section id="dedication-view" class="view-section"></section>
+
+    <!-- 3. Dashboard View -->
+    <section id="dashboard-view" class="view-section"></section>
+
+    <!-- 4. Daily Reading View -->
+    <section id="daily-reading-view" class="view-section"></section>
+
+    <!-- 5. Calendar View -->
+    <section id="calendar-view" class="view-section"></section>
+
+    <!-- 6. Favourites View -->
+    <section id="favourites-view" class="view-section"></section>
+
+    <!-- 7. Prayer Journal View -->
+    <section id="prayer-journal-view" class="view-section"></section>
+
+    <!-- 8. Personal Journal View -->
+    <section id="personal-journal-view" class="view-section"></section>
+
+    <!-- 9. Search View -->
+    <section id="search-view" class="view-section"></section>
+
+    <!-- 10. Settings View -->
+    <section id="settings-view" class="view-section"></section>
+
+    <!-- 11. Special Messages View -->
+    <section id="special-messages-view" class="view-section"></section>
+  </main>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Navigation">
+    <div class="mobile-nav-item" data-nav="dashboard" onclick="App.navigateTo('dashboard')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>Home</span>
+    </div>
+    <div class="mobile-nav-item" data-nav="daily-reading" onclick="App.navigateTo('daily-reading')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+      <span>Read</span>
+    </div>
+    <div class="mobile-nav-item" data-nav="calendar" onclick="App.navigateTo('calendar')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+      <span>Calendar</span>
+    </div>
+    <div class="mobile-nav-item" data-nav="prayer-journal" onclick="App.navigateTo('prayer-journal')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+      <span>Prayers</span>
+    </div>
+    <div class="mobile-nav-item" data-nav="favourites" onclick="App.navigateTo('favourites')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      <span>Favorites</span>
+    </div>
+  </nav>
+
+  <!-- Global Modal Structure -->
+  <div class="modal-backdrop" id="global-modal-backdrop" onclick="if(event.target === this) App.closeModal()">
+    <div class="modal-card" id="global-modal-container"></div>
+  </div>
+
+  <!-- Global Toast Notifications -->
+  <div class="toast-container" id="global-toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="./js/jspdf.umd.min.js"></script>
+  <script src="./js/bible-data.js"></script>
+  <script src="./js/state.js"></script>
+  <script src="./js/daily-reading.js"></script>
+  <script src="./js/dashboard.js"></script>
+  <script src="./js/calendar.js"></script>
+  <script src="./js/favourites.js"></script>
+  <script src="./js/prayer-journal.js"></script>
+  <script src="./js/personal-journal.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="./js/settings.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/validator.js"></script>
+  <script src="./js/pdf-generator.js"></script>
+  <script src="./js/app.js"></script>
+
+  <!-- Bootstrap App -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      App.init();
+    });
+  </script>
+</body>
+</html>
+

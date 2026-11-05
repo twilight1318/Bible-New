@@ -1,0 +1,134 @@
+/* ==========================================================================
+   366 DAYS WITH GOD - Premium Design Tokens & Themes
+   Colors: Soft blush pink, cream, ivory, lavender, muted sage green, soft gold
+   ========================================================================== */
+
+:root {
+  /* Font Families */
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-quote: 'Cormorant Garamond', Georgia, serif;
+
+  /* Base Radii & Shadows */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 2px 8px rgba(100, 70, 75, 0.05);
+  --shadow-md: 0 8px 24px rgba(100, 70, 75, 0.08);
+  --shadow-lg: 0 16px 40px rgba(100, 70, 75, 0.12);
+  --shadow-glow: 0 0 30px rgba(212, 175, 55, 0.25);
+
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-smooth: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Default Theme Accent: Blush Rose */
+  --accent-primary: #C97A8B;
+  --accent-primary-hover: #b46878;
+  --accent-light: #FCEFF2;
+  --accent-gradient: linear-gradient(135deg, #DF94A3 0%, #C97A8B 100%);
+  --gold-primary: #D4AF37;
+  --gold-light: #F9F4E5;
+  --gold-gradient: linear-gradient(135deg, #E6C86E 0%, #C59B27 100%);
+
+  /* Light Theme (Default) */
+  --bg-page: #FAF7F5;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-surface-soft: #F5EFEB;
+  --bg-card-verse: #FDF9F6;
+  --border-subtle: #EDE4DC;
+  --border-card: #E5D9CE;
+  --border-gold: rgba(212, 175, 55, 0.35);
+
+  --text-main: #2D2529;
+  --text-secondary: #6B5E65;
+  --text-muted: #96868F;
+  --text-verse: #1F191D;
+  --text-gold: #9E7D17;
+
+  --badge-bg: #F3EAE4;
+  --badge-text: #70585E;
+  
+  --completed-color: #4A7A5D;
+  --completed-bg: #EAF4EE;
+  --fav-color: #D94F6E;
+  --fav-bg: #FDEEF2;
+
+  --card-blur: blur(12px);
+}
+
+/* Palette Overrides (User Accent Settings) */
+[data-accent="sage"] {
+  --accent-primary: #587F63;
+  --accent-primary-hover: #476A51;
+  --accent-light: #EEF4F0;
+  --accent-gradient: linear-gradient(135deg, #749E80 0%, #587F63 100%);
+}
+
+[data-accent="lavender"] {
+  --accent-primary: #8675A9;
+  --accent-primary-hover: #726294;
+  --accent-light: #F2EEFA;
+  --accent-gradient: linear-gradient(135deg, #A293C4 0%, #8675A9 100%);
+}
+
+[data-accent="gold"] {
+  --accent-primary: #B88E28;
+  --accent-primary-hover: #9E7719;
+  --accent-light: #FAF5E8;
+  --accent-gradient: linear-gradient(135deg, #D4AF37 0%, #B88E28 100%);
+}
+
+/* Dark Theme (Nocturnal Peace Mode) */
+[data-theme="dark"] {
+  --bg-page: #181416;
+  --bg-surface: #221D20;
+  --bg-surface-elevated: #2A2428;
+  --bg-surface-soft: #2D262B;
+  --bg-card-verse: #262024;
+  --border-subtle: #3A3137;
+  --border-card: #453A41;
+  --border-gold: rgba(212, 175, 55, 0.45);
+
+  --text-main: #F4EBEF;
+  --text-secondary: #BFAEB8;
+  --text-muted: #8E7D87;
+  --text-verse: #FDF7FA;
+  --text-gold: #E6C86E;
+
+  --badge-bg: #322A30;
+  --badge-text: #D6BAC5;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.55);
+
+  --completed-color: #6DB387;
+  --completed-bg: #1B2B20;
+  --fav-color: #F0708F;
+  --fav-bg: #381922;
+}
+
+/* Font Size Adjustment Options */
+body.font-sm {
+  font-size: 14.5px;
+  --body-line-height: 1.6;
+}
+body.font-md {
+  font-size: 16px;
+  --body-line-height: 1.68;
+}
+body.font-lg {
+  font-size: 17.5px;
+  --body-line-height: 1.74;
+}
+body.font-xl {
+  font-size: 19px;
+  --body-line-height: 1.8;
+}
+

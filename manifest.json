@@ -1,0 +1,25 @@
+{
+  "name": "366 Days With God",
+  "short_name": "366 Days",
+  "description": "One Year. 366 Days. A Journey of Faith, Hope, Prayer and Love.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF7F5",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
